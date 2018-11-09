@@ -54,8 +54,6 @@ CoNLL-like column format where columns are:
 * `PROBABILITY`: probability of the chosen tag.
 
 
-## Corpus predictions
-
 ## Annotation guidelines
 
 The annotation guidelines describe the criteria that have been followed to annotate the corpus, along with illustrative examples. They describe FreeLing default resources, the criteria that have been followed in the manual annotation and the implementations that solve these criteria in automatic annotation. The guidelines also compare the criteria followed in this project with those followed by the Apache CTAKES NLP system (http://ctakes.apache.org/) as well as the criteria followed in the development of the GENIA corpus (https://github.com/spyysalo/genia-pos).
@@ -65,7 +63,7 @@ Guidelines have been written and developed in Spanish and are only available in 
 
 ## Corpus consistency
 
-The following three tables show the interagreement results measured on both the development and the validation corpus. See the inter-annotator agreement report (Informe_interagreement_CNIO_PlanTL_SEAD.pdf) included in folder iaain this repository for further details. The required minimum level was 98%.
+The following three tables show the interagreement results measured on both the development and the validation corpus. See the inter-annotator agreement report (Informe_interagreement_CNIO_PlanTL_SEAD.pdf) included in folder `IAA`in this repository for further details. The required minimum level was 98%.
 
 |                        | Token  | 
 | ---------------------- | ------ |
@@ -88,9 +86,6 @@ Table 2: Interagreement between the gold standard corpus and SPACCC_POS-TAGGER o
 | GS vs FL               | 99,97% |
 
 Table 3: Interagreement between the gold standard corpus and SPACCC_POS-TAGGER on the validation corpus.
-
-
-## Annotation schema
 
 
 ## Contact
