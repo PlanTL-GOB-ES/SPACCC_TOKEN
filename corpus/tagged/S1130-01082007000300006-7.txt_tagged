@@ -1,0 +1,137 @@
+CJRM CJRM NC00000 1
+. . Fp 1
+
+Varón varón NCMS000 0.333333
+de de SPS00 0.999984
+29 29 Z 1
+años año NCMP000 1
+. . Fp 1
+
+Hijo hijo NCMS000 0.711763
+mediano mediano AQ0MS0 1
+de de SPS00 0.999984
+tres 3 Z 1
+hermanos hermano NCMP000 1
+( ( Fpa 1
+los el DA0MP0 0.976481
+otros otro DI0MP0 0.569444
+dos 2 Z 0.991679
+, , Fc 1
+están estar VAIP3P0 1
+sanos sano AQ0MP0 1
+) ) Fpt 1
+. . Fp 1
+
+Casado casado NP00000 0.196875
+y y CC 0.999962
+sin sin SPS00 1
+hijos hijo NCMP000 1
+. . Fp 1
+
+No no RN 0.333333
+bebedor bebedor AQ0MS0 0.432256
+, , Fc 1
+ni ni CC 0.999182
+fumador fumador AQ0MS0 0.65727
+. . Fp 1
+
+Amigdalitis amigdalitis NCFN000 0.711763
+de de SPS00 0.999984
+repetición repetición NCFS000 1
+en en SPS00 1
+la el DA0FS0 0.972269
+infancia infancia NCFS000 1
+, , Fc 1
+siendo ser VSG0000 1
+operado operar VMP00SM 1
+a a SPS00 0.333333
+los el DA0MP0 0.976481
+6 6 Z 1
+años año NCMP000 1
+. . Fp 1
+
+Asintomático asintomático AQ0MS0 0.333333
+. . Fp 1
+
+Hábito hábito NCMS000 0.711763
+intestinal intestinal AQ0CS0 1
+normal normal AQ0CS0 0.986111
+. . Fp 1
+
+Analítica analítica NCFS000 0.407371
+normal normal AQ0CS0 0.986111
+con con SPS00 1
+ligera ligero AQ0FS0 1
+elevación elevación NCFS000 1
+persistente persistente AQ0CS0 1
+de de SPS00 0.999984
+las el DA0FP0 0.970954
+transaminasas transaminasa NCFP000 1
+. . Fp 1
+
+TTG TTG NC00000 1
+positiva positivo AQ0FS0 1
+( ( Fpa 1
+2,46 2.46 Z 1
+) ) Fpt 1
+. . Fp 1
+
+DQ2 DQ2 NC00000 1
+( ( Fpa 1
+- - Fg 1
+) ) Fpt 1
+y y CC 0.999962
+DQ8 DQ8 NC00000 1
+( ( Fpa 1
++ + Fz 1
+) ) Fpt 1
+. . Fp 1
+
+La el DA0FS0 0.972269
+biopsia biopsia NCFS000 0.333333
+duodenal duodenal AQ0CS0 1
+mostró mostrar VMIS3S0 1
+atrofia atrofia NCFS000 0.837462
+moderada moderar VMP00SF 0.691767
+de de SPS00 0.999984
+las el DA0FP0 0.970954
+vellosidades vellosidad NCFP000 1
+intestinales intestinal AQ0CP0 1
+, , Fc 1
+acompañada acompañar VMP00SF 1
+de de SPS00 0.999984
+infiltrado infiltrar VMP00SM 1
+inflamatorio inflamatorio AQ0MS0 1
+importante importante AQ0CS0 1
+, , Fc 1
+a a SPS00 0.333333
+nivel nivel NCMS000 1
+de de SPS00 0.999984
+la el DA0FS0 0.972269
+lámina lámina NCFS000 1
+propia propio AQ0FS0 1
+( ( Fpa 1
+estadio estadío NCMS000 0.333333
+3 3 Z 1
+b b NCFS000 1
+de de SPS00 0.999984
+Marsh marsh NP00000 1
+) ) Fpt 1
+. . Fp 1
+
+Está estar VAIP3S0 0.999201
+con con SPS00 1
+DSG DSG NC00000 1
+desde desde SPS00 1
+hace hacer VMIP3S0 1
+2 2 Z 1
+años año NCMP000 1
+, , Fc 1
+con con SPS00 1
+buena bueno AQ0FS0 1
+respuesta respuesta NCFS000 1
+clínica clínico AQ0FS0 0.58992
+y y CC 0.999962
+analítica analítico AQ0FS0 0.502421
+. . Fp 1
+
