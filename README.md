@@ -62,7 +62,32 @@ The annotation guidelines describe the criteria that have been followed to annot
 
 Guidelines have been written and developed in Spanish and are only available in Spanish.
 
+
 ## Corpus consistency
+
+The following three tables show the interagreement results measured on both the development and the validation corpus. See the inter-annotator agreement report (Informe_interagreement_CNIO_PlanTL_SEAD.pdf) included in folder iaain this repository for further details. The required minimum level was 98%.
+
+|                        | Token  | 
+| ---------------------- | ------ |
+| A1 vs A2               | 99,97% | 
+| A1 vs FL               | 99,95% | 
+| A2 vs FL               | 99,96% | 
+
+Table 1: Interagreement betwen the two human annotators and SPACCC_POS_TAGGER on the development corpus.
+
+
+|                        | Token  | 
+| ---------------------- | ------ |
+| GS vs FL               | 99,95% | 
+
+Table 2: Interagreement between the gold standard corpus and SPACCC_POS-TAGGER on the development corpus.
+
+
+|                        |  Token |
+| ---------------------- | ------ |
+| GS vs FL               | 99,97% |
+
+Table 3: Interagreement between the gold standard corpus and SPACCC_POS-TAGGER on the validation corpus.
 
 
 ## Annotation schema
