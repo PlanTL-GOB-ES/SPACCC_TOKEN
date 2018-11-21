@@ -28,7 +28,7 @@ Script to convert FreeLing3.1 tabular output format into BRAT standoff format.
 
 ## Document selection
 
-he SPACCC corpus was created after collecting 1,000 clinical cases from SciELO (Scientific Electronic Library Online), 
+The SPACCC corpus was created after collecting 1,000 clinical cases from SciELO (Scientific Electronic Library Online), 
 an electronic library that gathers electronic publications of complete full text articles from scientific journals of 
 Latin America, South Africa and Spain (http://www.scielo.org).
 
