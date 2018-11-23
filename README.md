@@ -4,7 +4,7 @@
 ## Introduction
 
 This repository contains the tokenization annotations in the Spanish Clinical Case Corpus that have been 
-carried out by means of the Spanish Clinical Case Corpus Part-of-Specch Tagger based on FreeLing3.1 
+carried out by means of the Spanish Clinical Case Corpus Part-of-Speech Tagger based on FreeLing3.1 
 (SPACCC_POS-TAGGER, https://github.com/PlanTL/SPACCC_POS-TAGGER).
 
 
