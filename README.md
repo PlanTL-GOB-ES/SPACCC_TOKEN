@@ -1,15 +1,15 @@
 # SPACCC_TOKEN: Spanish Clinical Case Corpus - Tokenization
 
+## Digital Object Identifier (DOI) and access to source files
+
+https://doi.org/10.5281/zenodo.1494869
+
+
 ## Introduction
 
 This repository contains the tokenization annotations in the Spanish Clinical Case Corpus that have been 
 carried out by means of the Spanish Clinical Case Corpus Part-of-Speech Tagger based on FreeLing3.1 
 (SPACCC_POS-TAGGER, https://github.com/PlanTL/SPACCC_POS-TAGGER).
-
-
-## Digital Object Identifier (DOI) and access to source files
-
-https://doi.org/10.5281/zenodo.1494869
 
 
 ## Repository structure
