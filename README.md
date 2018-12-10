@@ -41,6 +41,12 @@ and those that were not suitable for this task. Figure legends were automaticall
 cases were listed, these were split into single clinical cases.
 
 
+## Annotation tool
+
+Annotations were carried out by means of the Spanish Clinical Case Corpus Part-of-Speech Tagger based on FreeLing3.1 
+(SPACCC_POS-TAGGER, https://github.com/PlanTL/SPACCC_POS-TAGGER).
+
+
 ## Annotation format
 
 Annotations created in SPACCC_TOKEN are provided in BRAT standoff format; i.e. the annotations are stored separately 
@@ -56,6 +62,24 @@ CoNLL-like column format where columns are:
 * `LEMMA`: word lemma.
 * `TAG`: complete POS tag.
 * `PROBABILITY`: probability of the chosen tag.
+
+
+## Annotation types
+
+In the  `.ann` file each token is marked with the tag TOKEN.
+
+
+## Corpus predictions
+
+The quality of the annotations at the level of sentence splitting carried out with FreeLing3.1, i.e. FreeLing prior its 
+adaptation to the clinical corpus, was measured with the development corpus: 10% of the whole corpus, 100 randomly chosen 
+texts. 99.95% of the corpus was successfully annotated. 
+
+The discrepancies in tokenization affected 16 texts and were due to: segmentation of acronyms that included dots in several 
+tokens (e.g. i.m.), abbreviations ending in dot in final phrase position (e.g. 'stage / Ib._Posteriormente'), segmentation 
+of proper names (e.g. 'Saint_John / of / God', 'Unidad_de_Cirugía_Bucal / y / Maxilofacial'), addition of a dot to acronyms 
+not finished in dot (e.g. 'Mitomycin / C_.') and segmentation of the dot that ended abbreviations in separate tokens 
+(e.g. a /.).
 
 
 ## Annotation guidelines
