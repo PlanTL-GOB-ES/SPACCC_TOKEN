@@ -7,9 +7,14 @@ https://doi.org/10.5281/zenodo.1494869
 
 ## Introduction
 
-This repository contains the tokenization annotations in the Spanish Clinical Case Corpus that have been 
-carried out by means of the Spanish Clinical Case Corpus Part-of-Speech Tagger based on FreeLing3.1 
-(SPACCC_POS-TAGGER, https://github.com/PlanTL/SPACCC_POS-TAGGER).
+This repository contains the tokenization annotations in the Spanish Clinical Case Corpus.
+20% of the corpus was annotated manually by two annotators, while the remaining 80% was annotated automatically with 
+the Spanish Clinical Case Corpus Part-of-Speech Tagger (SPACCC_POS-TAGGER, 
+https://github.com/PlanTL/SPACCC_POS-TAGGER), with an implemented version of the FreeLing3.1 tool, which mimics the 
+criteria marked by the two human annotators.
+
+The corpus has 64,865 sentences, 353,144 words and 18,281 different lemmata. The ratio of words per sentence 
+is 5.44.
 
 
 ## Repository structure
@@ -37,7 +42,7 @@ an electronic library that gathers electronic publications of complete full text
 Latin America, South Africa and Spain (http://www.scielo.org).
 
 A clinician classified those cases into those that were similar to real clinical texts in terms of structure and content
-and those that were not suitable for this task. Figure legends were automatically removed and in case multiple clinical 
+and those that were not suitable for this task. Figure legends were automatically removed and, in case multiple clinical 
 cases were listed, these were split into single clinical cases.
 
 
@@ -50,30 +55,27 @@ Annotations were carried out by means of the Spanish Clinical Case Corpus Part-o
 ## Annotation format
 
 Annotations created in SPACCC_TOKEN are provided in BRAT standoff format; i.e. the annotations are stored separately 
-(in an `.ann` file) from the document text, which is never modified by the tool. 
-These two files are associated by their base name; their file name without suffix is the same: 
+(in an `.ann` file) from the document text (a `.txt` file). 
+These two files are associated by their base name; their file name without suffix is the same, for example, the file 
 `es-S0004-06142005000200009-1.ann` contains the annotations for the file `es-S0004-06142005000200009-1.txt`. 
 See http://brat.nlplab.org/standoff.html for further details on the brat standoff format. 
 
 This annotation format is produced by running an script that converts the output of SPACC_POS-TAGGER, a 
-CoNLL-like column format where columns are:
+CoNLL-like column format, where columns are:
 
 * `FORM`: word form.
 * `LEMMA`: word lemma.
 * `TAG`: complete POS tag.
 * `PROBABILITY`: probability of the chosen tag.
 
-
-## Annotation types
-
-In the  `.ann` file each token is marked with the tag TOKEN.
+In the `.ann` file each token is only labeled with the tag TOKEN.
 
 
 ## Corpus predictions
 
-The quality of the annotations at the level of sentence splitting carried out with FreeLing3.1, i.e. FreeLing prior its 
-adaptation to the clinical corpus, was measured with the development corpus: 10% of the whole corpus, 100 randomly chosen 
-texts. 99.95% of the corpus was successfully annotated. 
+The quality of the annotations at the level of sentence splitting carried by FreeLing prior its adaptation to the 
+clinical corpus, was measured with the development corpus: 1100 randomly chosen texts (10% of the whole corpus). 
+99.95% of this corpus was successfully annotated. 
 
 The discrepancies in tokenization affected 16 texts and were due to: segmentation of acronyms that included dots in several 
 tokens (e.g. i.m.), abbreviations ending in dot in final phrase position (e.g. 'stage / Ib._Posteriormente'), segmentation 
@@ -84,14 +86,18 @@ not finished in dot (e.g. 'Mitomycin / C_.') and segmentation of the dot that en
 
 ## Annotation guidelines
 
-The annotation guidelines describe the criteria that have been followed to annotate the corpus, along with illustrative examples. They describe FreeLing default resources, the criteria that have been followed in the manual annotation and the implementations that solve these criteria in automatic annotation. The guidelines also compare the criteria followed in this project with those followed by the Apache CTAKES NLP system (http://ctakes.apache.org/) as well as the criteria followed in the development of the GENIA corpus (https://github.com/spyysalo/genia-pos).
+The annotation guidelines describe the criteria that have been followed to annotate the corpus, along with illustrative 
+examples. They describe FreeLing default resources, the criteria that have been followed in the manual annotation and the 
+implementations that solve these criteria in automatic annotation. The guidelines also compare the criteria followed in 
+this project with those followed by the Apache CTAKES NLP system (http://ctakes.apache.org/) as well as the criteria 
+followed in the development of the GENIA corpus (https://github.com/spyysalo/genia-pos).
 
 Guidelines have been written and developed in Spanish and are only available in Spanish.
 
 
 ## Corpus consistency
 
-The following three tables show the interagreement results measured on both the development and the validation corpus. See the inter-annotator agreement report (Informe_interagreement_CNIO_PlanTL_SEAD.pdf) included in folder `IAA`in this repository for further details. The required minimum level was 98%.
+The following three tables show the interagreement results measured on both the development and the validation corpus. See the inter-annotator agreement report (Informe_interagreement_CNIO_PlanTL_SEAD.pdf) included in folder `IAA`in this repository for further details. Note that the required minimum level was 98%.
 
 |                        | Token  | 
 | ---------------------- | ------ |
