@@ -68,7 +68,10 @@ CoNLL-like column format, where columns are:
 * `TAG`: complete POS tag.
 * `PROBABILITY`: probability of the chosen tag.
 
-In the `.ann` file each token is only labeled with the tag TOKEN.
+
+## Annotation types
+
+In the `.ann` file each token is only labeled with the tag *token*.
 
 
 ## Corpus predictions
