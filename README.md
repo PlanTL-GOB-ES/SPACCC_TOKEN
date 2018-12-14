@@ -77,7 +77,7 @@ In the `.ann` file each token is only labeled with the tag *token*.
 ## Corpus predictions
 
 The quality of the annotations at the level of sentence splitting carried by FreeLing prior its adaptation to the 
-clinical corpus, was measured with the development corpus: 1100 randomly chosen texts (10% of the whole corpus). 
+clinical corpus, was measured with the development corpus: 100 randomly chosen texts (10% of the whole corpus). 
 99.95% of this corpus was successfully annotated. 
 
 The discrepancies in tokenization affected 16 texts and were due to: segmentation of acronyms that included dots in several 
