@@ -19,6 +19,16 @@ is 5.44.
 
 ## Repository structure
 
+In this repository:
+
+<pre>
+script/
+Script to convert FreeLing3.1 tabular output format into BRAT standoff format.
+</pre>
+
+
+In Zenodo:
+
 <pre>
 corpus/
 Original, development, validation and automatically annotated corpus, both in tabular format and BRAT 
@@ -28,10 +38,7 @@ guidelines/
 Annotation guidelines.
 
 IAA/
-Onter-annotator agreement report, along with the data and the scripts used to calculate it. 
-
-script/
-Script to convert FreeLing3.1 tabular output format into BRAT standoff format.
+Inter-annotator agreement report, along with the data and the scripts used to calculate it. 
 </pre>
 
 
