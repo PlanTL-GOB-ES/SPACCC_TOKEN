@@ -5,7 +5,9 @@ Script to convert FreeLing3.1 tabular output format into BRAT standoff format, w
 ## Directory structure
 * `ann/`: folder for temporary use of the script `Anotacion_a_BRAT.sh`
 * `Anotacion_a_BRAT.sh`: main script.
+* `convertidorFreelingBrat.py`: auxiliary script to complete the conversion.
 * `convertidorFreelingBrat_tokens.py`: auxiliary script to convert the tokenization.
+* `convertidorFreelingBrat_puntos.py`: auxiliary script to convert the sentence splitting. 
 * `convertidor.sh`: auxiliary script to call the suitable conversor.
 * `ejemplo_anotados/`: annotated sample text folder.
 * `ejemplo_originales/`: original sample text folder. 
