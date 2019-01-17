@@ -1,6 +1,6 @@
 # Script
 
-Script to convert FreeLing3.1 tabular output format into BRAT standoff format, where only the Sentence Boundary Symbols are marked.
+Script to convert FreeLing3.1 tabular output format into BRAT standoff format, where only the tokens are marked.
 
 ## Directory structure
 * `ann/`: folder for temporary use of the script `Anotacion_a_BRAT.sh`
