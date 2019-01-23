@@ -1,63 +1,120 @@
-# Script
+# Introduction
+------------
 
 Script to convert FreeLing3.1 tabular output format into BRAT standoff format, where only the tokens are marked.
 
-## Directory structure
-* `ann/`: folder for temporary use of the script `Anotacion_a_BRAT.sh`
-* `Anotacion_a_BRAT.sh`: main script.
-* `convertidorFreelingBrat.py`: auxiliary script to complete the conversion.
-* `convertidorFreelingBrat_tokens.py`: auxiliary script to convert the tokenization.
-* `convertidorFreelingBrat_puntos.py`: auxiliary script to convert the sentence splitting. 
-* `convertidor.sh`: auxiliary script to call the suitable conversor.
-* `ejemplo_anotados/`: annotated sample text folder.
-* `ejemplo_originales/`: original sample text folder. 
-* `ejemplo_resultados_ann_BRAT/`: sample text folder as they result from the execution of the script `Anotacion_a_BRAT.sh`.
-* `entrada/`: folder for temporary use of the script` Anotacion_a_BRAT.sh`.
-* `generadorFicherosBrat.py`: script with auxiliary functionality common to all converters.
-* `originales/`: folder for temporary use of the script `Anotacion_a_BRAT.sh`.
-* `README.md`: this file.
 
 ### Prerequisites
+------------
 
-The script requires Python 3 and html2text module installed on your system. You can install html2text module using the following command 
-with the right privileges:
+The script requires Python 3 installed on your system.
 
-<pre>
-apt install html2text
-</pre>
+NOTE: Do not remove `example_input/`, `example_tagged/` and `example_output/` folders.
 
-NOTE: `ann/`, `entrada/`, `originales/` and output folders must be created manually before running this script.
 
-### Troubleshooting
-
-If Python 3 is not called by default in your enviromentment, please change the call to `python` by `python3` in the 
-`convertidorFreelingBrat_tokens.py` script or create an alias.
-
-If you get an error similar to `'ascii' codec can't decode byte 0xc3 in position 67: ordinal not in range(128)` you can correct
-your locale configuration executing these commands:
+## Directory structure
+------------
 
 <pre>
-apt-get install -y --no-install-recommends locales && locale-gen en_US.UTF-8
-export LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+example_input/
+	Original sample text files folder. 
+
+example_tagged/
+	Annotated sample text files folder.
+
+example_output/
+	Sample text files folder as they result from the execution of the script `convertFreelingToBrat.py`.
+
+convertFreelingToBrat.py
+	Main script.
+
+generadorFicherosBrat.py
+	Script with auxiliary functionality to the converter.
+
+README.md
+	This file.
 </pre>
 
 
-### Convertir de formato FreeLing a BRAT
+
+## Usage
+------------
+
+It is possible to configure the behavior of this software using the different options.
+
+  - The `input_dir`, `tagged_dir`, and `output_dir` options allow to change the default folders.
+  
+  - `verbose` and `quiet` options allow to control the verbosity level of the software.
+  
+  - `level` option allows to select the desired level of annotation: `TOKENS`, `SENTENCES` 
+or `FULL`.
+
+
+The user can select the different options using the command line:
+
+	python convertFreelingToBrat.py [options] 
+
+Options:
+<pre>
+-h, --help            show this help message and exit
+-i INPUT_DIR, --input_dir INPUT_DIR	Folder with the original text files
+-t TAGGED_DIR, --tagged_dir TAGGED_DIR	Folder with the files annotated by Freeling
+-o OUTPUT_DIR, --output_dir OUTPUT_DIR	Folder to store the output files in BRAT standoff format
+-l {SENTENCES,FULL,TOKENS}, --level {SENTENCES,FULL,TOKENS}	Annotation level
+-v, --verbose         Increase output verbosity (not allowed with argument -q/--quiet)
+-q, --quiet           Do not print anything (not allowed with argument -v/--verbose)
+</pre>
+
+
+### Convert from Freeling format to BRAT
+------------
 
 To convert a set of files labeled by SPACCC_POS-TAGGER into BRAT standoff format, follow the following steps:
-* Put all original files (with extension `.txt`) in a folder
-* Put all of their corresponding annotated files (with extension `.txt_tagged`) in another folder
-* Create an output folder
-* Run the `Anotacion_a_BRAT.sh` script by choosing the TOKENS annotation level
-
-### Example:
-
-Assuming that we have:
-- the original files are in folder `ejemplo_originales/`
-- the annotated files are in folder `ejemplo_anotados/`
-- the destination folder is `ejemplo_resultados_ann_BRAT/` (it has to be created)
-
 <pre>
-Anotacion_a_BRAT.sh ejemplo_originales/ ejemplo_anotados/ ejemplo_resultados_ann_BRAT/ TOKENS 
+- Put all original files (with extension `.txt`) in a folder.
+- Put all of their corresponding annotated files (ex: with extension `.txt_tagged`) in another folder.
+- Create an output folder.
+- Run the `convertFreelingToBrat.py` script by choosing the FULL annotation level.
 </pre>
 
+
+### Example
+------------
+Assuming that we have the following configuration:
+
+<pre>
+- The original files are in folder `example_input/`
+- The annotated files are in folder `example_tagged/`
+- The destination folder is `example_output/`
+</pre>
+
+Run:
+
+<pre>
+python convertFreelingToBrat.py -i example_input/ -t example_tagged/ -o example_output/ -l TOKENS
+</pre>
+
+Given that those are the default folders, it also works running the following command:
+
+<pre>
+python convertFreelingToBrat.py -l TOKENS
+</pre>
+
+
+
+## Contact
+------
+
+Aitor Gonzalez-Agirre (aitor.gonzalez@bsc.es)
+
+
+## License
+-------
+
+Copyright (c) 2017-2018 Secretaría de Estado para el Avance Digital (SEAD)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
