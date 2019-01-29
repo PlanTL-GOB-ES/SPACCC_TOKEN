@@ -30,9 +30,9 @@ class FreelingToBrat(object):
                 output_ann = name_splitted[0] + ".ann"
 
                 # Process file and write
-                self.convert_text(args.input_dir + "/" + input_original,
-                                  args.tagged_dir + "/" + freeling_filename,
-                                  args.output_dir + "/" + output_ann)
+                self.convert_text(os.path.join(args.input_dir, input_original),
+                                  os.path.join(args.tagged_dir, freeling_filename),
+                                  os.path.join(args.output_dir, output_ann))
 
             except Exception as e:
                 if not args.quiet:
