@@ -24,7 +24,7 @@ class FreelingToBrat(object):
 
                 # Copy original text file to output directory for comfort
                 input_original = name_splitted[0] + ".txt"
-                copyfile(args.input_dir + "/" + input_original, args.output_dir + "/" + input_original)
+                copyfile(os.path.join(args.input_dir, input_original), os.path.join(args.output_dir, input_original))
 
                 # Output Brat annotations file with same name but '.ann' suffix
                 output_ann = name_splitted[0] + ".ann"
