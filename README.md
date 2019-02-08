@@ -108,7 +108,7 @@ Guidelines have been written and developed in Spanish and are only available in 
 
 ## Corpus consistency
 
-The following three tables show the interagreement results measured on both the development and the validation corpus. See the inter-annotator agreement report (Informe_interagreement_CNIO_PlanTL_SEAD.pdf) included in folder `IAA`in this repository for further details. Note that the required minimum level was 98%.
+The following three tables show the interagreement results measured on both the development and the validation corpus. See the inter-annotator agreement report (Informe_interagreement_CNIO_PlanTL_SEAD.pdf) included in folder `IAA`in Zenodo for further details. Note that the required minimum level was 98%.
 
 |                        | Token  | 
 | ---------------------- | ------ |
